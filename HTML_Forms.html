@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="form-container">
+    <h1>Student Admission Form</h1>
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password"  id="password" name="password">
+        <br>
+        <label for="mobilenumber">Mobile Number</label>
+        <input type="number"  id="mobilenumber" name="mobilenumber">
+        <br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" >
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+       
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+
+        <label for="Course">Course</label>
+        <select id="course" name="course">
+            <option value="">Options</option>
+            <option value="BCA">BCA</option>
+            <option value="BCS">BCS</option>
+            <option value="MCA">MCA</option>
+        </select>
+
+        <fieldset>
+           <legend>YEAR</legend>
+            <input type="radio" id="firstYear" name="year" value="firstYear">
+            <label for="First Year">First Year</label>
+            
+            <input type="radio" id="secondYear" name="year" value="lastYear">
+            <label for="Second Year">Seond Year</label>
+
+            <input type="radio" id="lastYear" name="year" value="thirdYear">
+            <label for="Last Year">Last Year</label>
+        </fieldset>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="5" required></textarea>
+
+       
+
+        <label for="Timing">Timing</label>
+         <input type="checkbox" id="timing" name="timing">
+         <label for="Morning">Morning</label>
+
+         <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo" required>
+
+
+        <button type="reset">Clear</button>
+        <br>
+        <button type="submit">Save</button>
+    </form>
+</div>
+</body>
+
+</html>
